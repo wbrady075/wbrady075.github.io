@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<!--注記一下tab縮排的相反是shift+tab-->
+<html>
+	<head>
+		<title>Welcome to my page</title>
+		<link rel="stylesheet" href="css練習.css">
+	</head>
+	<body>
+		
+		<div class="part">
+			<div class="timee">
+				<h3 id="time">在此處顯示日期</h3>
+			</div>
+		</div>
+		
+		<div class="part">
+			<div class="cookie_t">
+				<h3>開啟網頁紀錄</h3>
+				<ol id='pre_opage'></ol>
+			</div>
+		</div>
+		
+		<div class="part">
+			<div>
+				<form id="t_sel">
+					<select name="t_sel2">
+						<option value="1" selected>1號選項</option>
+						<option value="2">2號選項</option>
+					</select>
+				</form>
+				<p id="t_sel3"></p>
+			</div>
+		</div>
+		
+		<div class="part">
+			<p id="user_return">在此處顯示使用者回傳訊息</p>
+			<form action="#" id="inp_smth">
+				<input type="submit" value="輸入點什麼">
+			</form>
+		</div>
+		
+		<div class="part">
+			<h3>代辦事項清單</h3>
+				<ul id = "todo"></ul>
+			<form action="#" id="todoadd">
+				<input type="text" name="c_todo"> <!--name屬性在傳送到伺服器的時候，會變成變數的名稱-->
+				<input type="submit" value="增加代辦事項">
+			</form>
+		</div>
+		
+		<div class="part">
+			<form action="#" id="form">
+				<input type="submit" value="連續按">
+			</form>
+			<p id="triggered"></p>
+		</div>
+		
+		<div class="part">
+			<section>
+				<div class='center'>
+					<div>
+						<img src='img/11.jpg' id='big_img'>
+					</div>
+					<ul class='walfie'>
+						<li><img src='img/1.png' class='thumb' data-image='img/11.jpg'></li>
+						<li><img src='img/2.png' class='thumb' data-image='img/22.jpg'></li>
+						<li><img src='img/3.png' class='thumb' data-image='img/33.jpg'></li>
+						<li><img src='img/4.png' class='thumb' data-image='img/44.jpg'></li>
+						<li><img src='img/5.png' class='thumb' data-image='img/55.jpg'></li>
+					</ul>
+				<div>
+			</section>
+		</div>
+		
+		<div class="part">
+			<h5 id="ajax_test">json範例按鈕</h5>
+		</div>
+		
+		<script src="js.cookie.js"></script>
+		<script src="jquery_3_5_1_min.js"></script>
+		<script src="javascript練習.js"></script>
+	</body>
+</html>
